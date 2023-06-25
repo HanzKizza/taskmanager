@@ -1,4 +1,5 @@
 import Header from './Components/Header';
+import Tasks from './Components/Tasks';
 
 function App() {
   const tasks = [
@@ -24,9 +25,7 @@ function App() {
   return (
     <div className='container'>
       <Header title="Task Manager" />
-      {
-        tasks.map((task) => (<p>{task.text}</p>))
-      }
+      <Tasks tasks = {tasks}/>
     </div>
   );
 }
