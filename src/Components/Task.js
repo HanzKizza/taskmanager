@@ -1,11 +1,12 @@
 import React from 'react'
+import Button from './Button'
 
 function Task({task}) {
   return (
-    <div className='task'>
-      <h1>{task.text}</h1>
+    <div className={`task ${task.reminder ? 'reminder': ''}`}>   
+      <h3>{task.text} <Button /></h3>
+      <p>{task.day}</p>
     </div>
   )
 }
-
 export default Task

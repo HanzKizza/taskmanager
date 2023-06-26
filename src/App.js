@@ -7,7 +7,7 @@ function App() {
       id: 1,
       text: "Meeting Elon",
       day: "Feb 10 2030",
-      reminder: false
+      reminder: true
     },
     {
       id: 2,
